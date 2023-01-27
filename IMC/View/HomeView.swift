@@ -75,6 +75,6 @@ class HomeView: BaseView {
         
         calculateButton.anchor(top: heightTxtField.bottomAnchor, leading: heightTxtField.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 150, left: 30, bottom: 0, right: 0), size: .init(width: 180, height: 60))
         
-        resultLabel.anchor(top: nil, leading: calculateButton.leadingAnchor, bottom: calculateButton.topAnchor, trailing: nil, padding: .init(top: 0, left: 10, bottom: 70, right: 0), size: .init(width: 180, height: 20))
+        resultLabel.anchor(top: nil, leading: calculateButton.leadingAnchor, bottom: calculateButton.topAnchor, trailing: nil, padding: .init(top: 0, left: -20, bottom: 70, right: 0), size: .init(width: 230, height: 20))
     }
 }

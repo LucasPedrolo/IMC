@@ -22,14 +22,14 @@ class HomeViewController: UIViewController {
     }
     
     @objc func calcImc() {
-        let result = viewModel.calc(weight: Float(homeView.weightTxtField.text ?? "") ?? 0, height: Float(homeView.heightTxtField.text ?? "") ?? 0)
+        let result = viewModel.calc(weight: Float(homeView.weightTxtField.text ?? defString) ?? defFloat, height: Float(homeView.heightTxtField.text ?? defString) ?? defFloat)
         
         if result.isNaN {
-            homeView.resultLabel.text = "Seu IMC é: Error NaN"
+            homeView.resultLabel.text = "Please, insert a valid number"
         } else if result.isInfinite {
-            homeView.resultLabel.text = "Seu IMC é: Error Infinite"
+            homeView.resultLabel.text = "Please, check your info"
         } else {
-            homeView.resultLabel.text = "Seu IMC é: \(result)"
+            homeView.resultLabel.text = "Your IMC is: \(result)"
         }
     }
 }

@@ -7,6 +7,9 @@
 
 import UIKit
 
+let defString = String(stringLiteral: "")
+let defFloat = Float(floatLiteral: 0)
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
